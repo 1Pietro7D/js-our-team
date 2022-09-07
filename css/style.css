@@ -7,14 +7,14 @@
 .my_album_cards {
   width: 100%;
 }
-.my_album_cards ul {
+.my_album_cards > ul {
   background-color: black;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-top: 2rem;
 }
-.my_album_cards li {
+.my_album_cards > ul > li {
   display: inline-block;
   width: 80%;
   margin-bottom: 2rem;
@@ -27,7 +27,7 @@
   border-radius: 30px;
   padding: 1.5rem 0;
 }
-.my_album_cards li img {
+.my_album_cards > ul > li > img {
   width: 225px;
   height: 225px;
   object-fit: cover;
@@ -35,13 +35,13 @@
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 600px) {
-  .my_album_cards li {
+  .my_album_cards > ul > li {
     width: 40%;
   }
 }
 
 @media screen and (min-width: 900px) {
-  .my_album_cards li {
+  .my_album_cards > ul > li {
     width: 30%;
   }
 }
