@@ -62,10 +62,9 @@ for (let index = 0; index < team.length; index++) {
   // END M1 --
   album_team.innerHTML += `
     <li>
-    <img src="img/${teamMate.picture}" alt"" >
-    <h3>${teamMate.name}</h3>
-    <p>${teamMate.role}</p>
-    <li>
-
+      <img src="img/${teamMate.picture}" alt"" >
+      <h3>${teamMate.name}</h3>
+      <p>${teamMate.role}</p>
+    </li>
     `;
 }
