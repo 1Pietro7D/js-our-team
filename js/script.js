@@ -14,7 +14,8 @@ const teamMate = {
 // Scott Estrada	Developer	scott-estrada-developer.jpg
 // Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 
-// M1 -- ARRAY OF OBJECT
+// M1 -- ARRAY OF OBJECT AND CONSOLE.LOG
+
 const team = [
   {
     picture: "wayne-barnett-founder-ceo.jpg",
@@ -56,5 +57,15 @@ for (let index = 0; index < team.length; index++) {
     TEAM MATE ${index + 1}
     name: ${teamMate.name}
     role: ${teamMate.role}
+    
     `);
-} // END M1 --
+  // END M1 --
+  album_team.innerHTML += `
+    <li>
+    <img src="img/${teamMate.picture}" alt"" >
+    <h3>${teamMate.name}</h3>
+    <p>${teamMate.role}</p>
+    <li>
+
+    `;
+}
